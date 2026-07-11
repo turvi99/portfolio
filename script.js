@@ -73,40 +73,25 @@ const projects = [
     ],
     github: "https://github.com/turvi99"
   },
-  // 4 - Hybrid ML Churn
+  // 4 - Telco Customer Churn (ML-Sem-Project)
   {
-    title: "Hybrid ML Models for Customer Churn",
+    title: "Telco Customer Churn Prediction",
     image: "images/churn_prediction.png",
     year: "Nov 2024 – Feb 2025",
     lang: "Jupyter Notebook",
-    desc: "Research project under Dr. Saleti Sumalatha. Built hybrid ensemble machine learning models combining Random Forest, AdaBoost, and XGBoost for customer churn prediction across multiple industry domains — banking, telecom, travel, and e-commerce.",
+    desc: "End-to-end ML pipeline for Telco customer churn prediction on the Kaggle dataset (7,043 customers × 21 features). Compared 5 models — Random Forest, KNN, AdaBoost, XGBoost, and Naive Bayes — and applied SMOTEENN to handle class imbalance, boosting KNN accuracy to 97.38%. Includes a 3-page interactive Streamlit dashboard for real-time predictions.",
     features: [
-      "Ensemble: Random Forest + AdaBoost + XGBoost",
-      "Multi-domain evaluation: banking, telecom, travel, e-commerce",
-      "Feature engineering and selection pipelines",
-      "Hyperparameter tuning with GridSearchCV",
-      "ROC-AUC, precision-recall, and business impact analysis",
-      "Comparative study of individual vs. ensemble performance"
+      "5 models: RandomForest, KNN, AdaBoost, XGBoost, Naive Bayes",
+      "SMOTEENN (SMOTE + ENN) for class imbalance — +18-22% accuracy boost",
+      "Best model: KNN at 97.38% accuracy after balancing",
+      "GridSearchCV hyperparameter tuning with sklearn Pipeline",
+      "3-page Streamlit dashboard: Predict, Explorer, Insights",
+      "15+ visualizations: count plots, KDE, correlation heatmap, confusion matrix"
     ],
     github: "https://github.com/turvi99/ML-Sem-Project"
   },
-  // 5 - DIP Research
-  {
-    title: "DIP Research Project",
-    image: "",
-    year: "Mar 2026",
-    lang: "Jupyter Notebook",
-    desc: "Digital Image Processing research project exploring advanced image analysis techniques including spatial and frequency domain filtering, edge detection, morphological operations, segmentation, and feature extraction for real-world image analysis applications.",
-    features: [
-      "Spatial domain filtering: Gaussian, median, bilateral",
-      "Frequency domain analysis: FFT, DCT transforms",
-      "Edge detection: Canny, Sobel, Laplacian operators",
-      "Image segmentation techniques",
-      "Morphological operations for binary image processing",
-      "Feature extraction for pattern recognition"
-    ],
-    github: "https://github.com/turvi99/DIP-RESEARCH-PROJECT"
-  },
+  // 5 - (removed, DIP repo deleted)
+  null,
   // 6 - Hackathon
   {
     title: "Hackathon Project",
@@ -143,19 +128,20 @@ const projects = [
   null,
   // 9 - (unused, reserved)
   null,
-  // 10 - Chatbot
+  // 10 - MedBot v2.0 (chatbot)
   {
-    title: "Chatbot",
+    title: "MedBot v2.0 — Healthcare Chatbot",
     image: "",
     year: "2025",
-    lang: "Jupyter Notebook",
-    desc: "AI-powered chatbot project implementing natural language understanding and dialogue management. Built using NLP techniques for intent recognition, entity extraction, and context-aware response generation.",
+    lang: "Python",
+    desc: "An intelligent NLP-driven medical assistant that classifies symptoms, detects emergencies in real-time, and provides preliminary health guidance. Built with a 3-layer Dense Neural Network (128→64→softmax), covers 9 diseases with 25 intent categories, includes a fully-featured Tkinter desktop GUI with 5 customizable themes.",
     features: [
-      "Natural language understanding pipeline",
-      "Intent classification and entity extraction",
-      "Context-aware dialogue management",
-      "Response generation with template and ML approaches",
-      "Training data preprocessing and model evaluation"
+      "3-layer Dense Neural Network (128→64→softmax) for intent classification",
+      "9 diseases covered: Cold, Fever, Diabetes, Depression, Asthma, COVID-19, Hypertension, Malaria, Heart Disease",
+      "Real-time emergency keyword detection with popup alerts",
+      "41 unit tests across 5 test classes",
+      "Tkinter GUI with 5 color themes and 5 font options",
+      "Symptom recognition, medicine suggestions, prevention & dietary guidance"
     ],
     github: "https://github.com/turvi99/chatbot"
   },
@@ -177,18 +163,18 @@ const projects = [
   },
   // 12 - Machine Learning Lab
   {
-    title: "Machine Learning Lab",
+    title: "Machine Learning Lab — Experiment Portfolio",
     image: "",
     year: "2025",
     lang: "Jupyter Notebook",
-    desc: "Comprehensive machine learning laboratory experiments covering supervised and unsupervised learning, regression, classification, clustering algorithms, and model evaluation techniques with hands-on implementations.",
+    desc: "A collection of 10 machine learning lab experiments covering NumPy fundamentals, data wrangling, preprocessing, regression, classification, NLP, data visualization, and interactive dashboards. Uses 12+ algorithms across 6 datasets including Titanic, Breast Cancer, Bike Sharing, Churn, Resume, and US Airlines Tweets. Best accuracy: 97.2% (Logistic Regression on Breast Cancer).",
     features: [
-      "Linear & logistic regression implementations",
-      "Decision trees and ensemble methods",
-      "K-means, DBSCAN clustering",
-      "Model evaluation: cross-validation, ROC, confusion matrix",
-      "Feature engineering and data preprocessing",
-      "Comparative analysis of ML algorithms"
+      "10 lab experiments spanning the complete ML lifecycle",
+      "12+ algorithms: Logistic Regression, Linear Regression, Naive Bayes, SMOTE, PCA, etc.",
+      "6 datasets: Titanic, Breast Cancer, Bike Sharing, Churn, Resume, US Airlines Tweets",
+      "Best accuracy: 97.2% (Logistic Regression on Breast Cancer)",
+      "NLP Resume Classifier with Naive Bayes",
+      "Interactive Streamlit dashboard for visualization"
     ],
     github: "https://github.com/turvi99/Machine-Learning-Lab"
   },
@@ -208,35 +194,37 @@ const projects = [
     ],
     github: "https://github.com/turvi99/WEB-CASE-STUDY"
   },
-  // 14 - Python Project
+  // 14 - Python Project (Heart Disease Prediction)
   {
-    title: "Python Project",
-    image: "",
-    year: "2025",
-    lang: "Jupyter Notebook",
-    desc: "Python programming project showcasing core programming concepts, data structures, algorithms, and practical problem-solving implementations with clean, documented code.",
-    features: [
-      "Data structures and algorithm implementations",
-      "Object-oriented programming patterns",
-      "File I/O and data processing",
-      "Problem-solving with Python",
-      "Code documentation and best practices"
-    ],
-    github: "https://github.com/turvi99/Python-Project"
-  },
-  // 15 - Gen-AI
-  {
-    title: "Generative AI Projects",
+    title: "Heart Disease Prediction — Flask Web App",
     image: "",
     year: "2025",
     lang: "Python",
-    desc: "A comprehensive collection of generative AI experiments and projects exploring the frontier of language models, prompt engineering techniques, and creative AI applications. Includes practical implementations of various GenAI paradigms.",
+    desc: "End-to-end heart disease prediction system with a Flask web application. Trained 3 models (Random Forest 96%, XGBoost 94%, Logistic Regression 72%) on a merged heart dataset (2,181 rows × 14 columns). Features a glassmorphism-styled UI for real-time predictions via the deployed Random Forest model.",
     features: [
-      "Large Language Model interaction & prompt engineering",
-      "Text generation and creative writing AI",
-      "API integration with state-of-the-art models",
-      "Practical GenAI application development",
-      "Prompt template design and optimization"
+      "3 models compared: Random Forest (96%), XGBoost (94%), Logistic Regression (72%)",
+      "Flask web app with glassmorphism UI and 13 input fields",
+      "Merged heart dataset: 2,181 rows × 14 clinical features",
+      "Min-Max normalization, median imputation for missing values",
+      "EDA: correlation heatmap, pair plots, boxplots, cholesterol analysis",
+      "Best model (Random Forest 96%) serialized with pickle for deployment"
+    ],
+    github: "https://github.com/turvi99/Python-Project"
+  },
+  // 15 - Gen-AI (Keyword Extraction System)
+  {
+    title: "Keyword Extraction System — Researcher's Assistant",
+    image: "",
+    year: "2025",
+    lang: "Python",
+    desc: "A Streamlit-based NLP application that extracts keywords, generates summaries, and visualizes word clouds from any text document. Uses the TextRank algorithm (Summa library) for extractive keyword extraction and summarization. Supports .txt file upload or manual text input with downloadable results.",
+    features: [
+      "TextRank algorithm (Summa library) for keyword extraction",
+      "Extractive text summarization of key sentences",
+      "Word cloud visualization with WordCloud + Matplotlib",
+      "Streamlit web interface with file upload and manual input",
+      "Downloadable results: keywords, summaries",
+      "Graceful handling of short or empty text inputs"
     ],
     github: "https://github.com/turvi99/Gen-ai"
   },
