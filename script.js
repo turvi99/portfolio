@@ -92,19 +92,20 @@ const projects = [
   },
   // 5 - (removed, DIP repo deleted)
   null,
-  // 6 - Hackathon
+  // 6 - Hackathon (Digital Twin Heart Risk Predictor)
   {
-    title: "Hackathon Project",
+    title: "Digital Twin — Heart Risk Predictor",
     image: "",
     year: "Nov 2025",
-    lang: "HTML",
-    desc: "Full-stack web application developed during a competitive hackathon. Built with HTML, CSS, and JavaScript with focus on rapid prototyping, clean user interface design, and interactive data-driven features.",
+    lang: "Python",
+    desc: "Full-stack AI-powered health informatics web app built during a hackathon. Predicts 10-year coronary heart disease risk using a RandomForestClassifier trained on the Framingham Heart Study dataset (4,240 records, 15 clinical features). Features a psychosocial 'Digital Twin' emotion modifier and Flask-based deployment with animated risk gauge.",
     features: [
-      "Responsive web design with modern CSS",
-      "Interactive data visualizations",
-      "Real-time user interaction handling",
-      "Clean, intuitive UI/UX design",
-      "Rapid prototype development under time constraints"
+      "RandomForestClassifier (Scikit-Learn) trained on Framingham Heart Study data",
+      "15 clinical biomarker inputs (cholesterol, BP, BMI, glucose, smoking, etc.)",
+      "Digital Twin emotion modifier — adjusts risk based on stress/mood state",
+      "3-tier risk stratification: Low (<30%), Moderate (30–70%), High (≥70%)",
+      "Flask backend with session authentication and Jinja2 templating",
+      "Animated color-coded risk gauge + personalized health tips"
     ],
     github: "https://github.com/turvi99/Hackathon"
   },
@@ -180,17 +181,18 @@ const projects = [
   },
   // 13 - Web Case Study
   {
-    title: "Web Case Study",
+    title: "Web Case Study — Frontend Development",
     image: "",
-    year: "2025",
+    year: "Apr 2025",
     lang: "HTML",
-    desc: "Web development case study project exploring modern frontend design patterns, responsive layouts, and interactive user experience design using HTML, CSS, and JavaScript.",
+    desc: "Frontend web development case study demonstrating 3 distinct UI patterns: a structured Sports Club questionnaire form with tabular layout, an interactive tabbed content switcher built with vanilla JavaScript and Flexbox, and a single-page application (SPA) portfolio with Bootstrap 5 and client-side routing.",
     features: [
-      "Responsive web design with CSS Grid/Flexbox",
-      "Modern frontend design patterns",
-      "Interactive UI components",
-      "Cross-browser compatibility",
-      "Accessibility best practices"
+      "Sports Club/Clay Target Questionnaire — paper-to-digital HTML form with 11 safety compliance fields",
+      "Interactive tabbed content component with CSS transitions and DOM event handling",
+      "SPA portfolio with client-side view routing (no page reloads) using classList toggling",
+      "Bootstrap 5.3.0 integration for responsive navbar, forms, and grid layout",
+      "Translucent RGBA overlays, Flexbox layout, and hover animations",
+      "Browser verification screenshots for each rendered page"
     ],
     github: "https://github.com/turvi99/WEB-CASE-STUDY"
   },
