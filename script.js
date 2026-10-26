@@ -11,7 +11,7 @@ const projects = [
     image: "images/clinfuse_cxr.png",
     year: "Jun 2026",
     lang: "Python",
-    desc: "Full implementation of the ClinFuse-CXR research. This multimodal framework fuses chest X-ray images with clinical text using cross-modal attention for multi-label pathology classification. Achieves 0.986 AUC on MIMIC-CXR and 0.738 zero-shot on CheXpert with only 16M trainable parameters.",
+    desc: "Full implementation of the ClinFuse-CXR research. This multimodal framework fuses chest X-ray images with clinical text using cross-modal attention for multi-label pathology classification across 9 pathology classes. Achieves 0.986 AUC on MIMIC-CXR and 0.738 zero-shot on CheXpert with only 12M trainable parameters — under 6% of BioViL's size.",
     features: [
       "MobileNetV3-Small image encoder for efficient feature extraction",
       "Bio_ClinicalBERT text encoder with selective fine-tuning",
